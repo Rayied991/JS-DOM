@@ -6,7 +6,7 @@
     <!-- Favicon -->
     <link rel="icon" href="./assets/logo.png" type="image/png" />
 
-    <!-- Lexend fonts from google font-->
+    <!--  google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +14,6 @@
       rel="stylesheet"
     />
 
-    <!-- Tailwind Integration with DaisyUI-->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -34,7 +33,7 @@
             },
 
             fontFamily: {
-              lexend: "Lexend", // Adds a new `font-display` class
+              lexend: "Lexend",
             },
           },
         },
@@ -83,7 +82,6 @@
       </nav>
     </header>
     <main class="min-h-screen">
-      <!-- @FAQ SECTION -->
       <section class="mt-10">
         <div class="container mx-auto lg:max-w-6xl max-lg:px-4">
           <h1 class="text-2xl font-bold py-4">Frequently Ask Question</h1>
@@ -131,13 +129,13 @@
               </div>
               <div class="collapse-content">
                 <p>
-                  Event delegation is a technique involving adding event
-                  listeners to a parent element instead of adding them to the
-                  descendant elements. The listener will fire whenever the event
-                  is triggered on the descendant elements due to event bubbling
-                  up the DOM. It is useful because it allows you to add a single
-                  event listener to a parent element to manage many elements
-                  with fewer event listeners.
+                  Event delegation is a technique in the Document Object Model
+                  (DOM) where a single event listener is attached to a parent
+                  element to manage events for multiple child elements, rather
+                  than attaching individual listeners to each child element. The
+                  idea is that events bubble up (or propagate) through the DOM
+                  hierarchy, so an event on a child can be caught by an event
+                  listener on one of its ancestors.
                 </p>
               </div>
             </div>
